@@ -62,7 +62,7 @@ func main() {
 	flag.Parse()
 
 	if len(*tgtEksClusterName) == 0 {
-		klog.Infoln("No specified source k8s cluster name, nothing to restore, exit !")
+		klog.Infoln("No specified target k8s cluster name, nothing to restore, exit !")
 		Usage()
 		os.Exit(0)
 	}
